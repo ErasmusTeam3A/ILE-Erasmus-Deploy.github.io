@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ILE-Erasmus/static/css/main.2ba0ca69.chunk.css",
+    "main.js": "/ILE-Erasmus/static/js/main.09b2fe43.chunk.js",
+    "main.js.map": "/ILE-Erasmus/static/js/main.09b2fe43.chunk.js.map",
+    "runtime-main.js": "/ILE-Erasmus/static/js/runtime-main.7e413154.js",
+    "runtime-main.js.map": "/ILE-Erasmus/static/js/runtime-main.7e413154.js.map",
+    "static/js/2.eae45f6a.chunk.js": "/ILE-Erasmus/static/js/2.eae45f6a.chunk.js",
+    "static/js/2.eae45f6a.chunk.js.map": "/ILE-Erasmus/static/js/2.eae45f6a.chunk.js.map",
+    "index.html": "/ILE-Erasmus/index.html",
+    "precache-manifest.92b51b5377cc8e8e6eae7b8d236f2240.js": "/ILE-Erasmus/precache-manifest.92b51b5377cc8e8e6eae7b8d236f2240.js",
+    "service-worker.js": "/ILE-Erasmus/service-worker.js",
+    "static/css/main.2ba0ca69.chunk.css.map": "/ILE-Erasmus/static/css/main.2ba0ca69.chunk.css.map",
+    "static/js/2.eae45f6a.chunk.js.LICENSE.txt": "/ILE-Erasmus/static/js/2.eae45f6a.chunk.js.LICENSE.txt",
+    "static/media/dicom-pelvic.jpg": "/ILE-Erasmus/static/media/dicom-pelvic.fd136912.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e413154.js",
+    "static/js/2.eae45f6a.chunk.js",
+    "static/css/main.2ba0ca69.chunk.css",
+    "static/js/main.09b2fe43.chunk.js"
+  ]
+}

@@ -189,8 +189,6 @@ class Model extends React.Component {
       .catch((error) => {
         console.error('Connection failed!', error)
       })
-
-
     }
 
   subscribeToChanges = (characteristic) => {
@@ -285,31 +283,33 @@ class Model extends React.Component {
     }
 
     loadGltf = (props, position) => {
-        const gltfLoader = new GLTFLoader() // Removed THREE
+        this.gltfLoader = new GLTFLoader()
 
         const dracoLoader = new DRACOLoader();
 
-        const pelvicHalf = "/Pelvic-half.glb";
-        const silhouette = "/Silhouette.glb";
+        const pelvicHalf = process.env.PUBLIC_URL + '/Pelvic-half.glb';
+        const silhouette = process.env.PUBLIC_URL + '/Silhouette.glb';
 
-        gltfLoader.setDRACOLoader( dracoLoader );
+        this.gltfLoader.setDRACOLoader( dracoLoader );
 
         if(this.props.selectedFilter == 0) {
 
             dracoLoader.setDecoderPath(silhouette);
 
-            gltfLoader.load(
+            this.gltfLoader.load(
                   silhouette,
-              function(gltf) {
+              (gltf) => {
                   model = gltf.scene;
                 scene.add(gltf.scene);
+                console.log(gltf)
               },
-              function(xhr) {
+              (xhr) => {
                 console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
               },
               // called when loading has errors
-              function(error) {
-                console.log("An error happened" + error);
+              (error) => {
+                //console.log("An error happened" + error);
+                console.log("An error happened")
               }
             );
 
@@ -318,9 +318,9 @@ class Model extends React.Component {
 
         if(this.props.selectedFilter == 1) {
 
-        dracoLoader.setDecoderPath(pelvicHalf);
+          dracoLoader.setDecoderPath(pelvicHalf);
 
-            gltfLoader.load(
+            this.gltfLoader.load(
                 pelvicHalf,      //"/Pelvic-half.glb",
               function(gltf) {
                   model = gltf.scene;
@@ -331,7 +331,8 @@ class Model extends React.Component {
               },
               // called when loading has errors
               function(error) {
-                console.log("An error happened" + error);
+                //console.log("An error happened" + error);
+                console.log("An error happened")
               }
             );
 
@@ -364,6 +365,8 @@ class Model extends React.Component {
       this.frameId = window.requestAnimationFrame(this.animate);
     };
     renderScene = () => {
+
+
       if (this.renderer) this.renderer.render(scene, this.camera);
     };
 

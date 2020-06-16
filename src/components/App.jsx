@@ -1,7 +1,7 @@
 import React from 'react';
 import './../sass/Main.scss';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -20,7 +20,7 @@ const history = createBrowserHistory();
 class App extends React.Component {
   render() {
     return (
-      <Router  history={history}>
+      <Router history={history}>
         <Switch>
           <Route exact path="/" component={Start} />
           <Route exact path="/interactive" component={Interactive} />

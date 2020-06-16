@@ -1,0 +1,17 @@
+node_modules/
+
+dist/Pelvic-Ref-001.obj
+
+dist/Pelvic.stl
+
+dist/Pelvic-half.gltf
+
+dist/Pelvic-half.glb
+
+dist/Silhouette.glb
+
+src/objects/pelvic.stl
+
+dist/.DS_Store
+
+.DS_Store

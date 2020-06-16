@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ILE-Erasmus-Deploy.github.io/precache-manifest.bd6f8043083f4b87aa5953d2e2459e4b.js"
+  "/ILE-Erasmus-Deploy.github.io/precache-manifest.e7efe653caac51104ca951415b8de83f.js"
 );
 
 self.addEventListener('message', (event) => {

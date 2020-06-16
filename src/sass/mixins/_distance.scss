@@ -1,0 +1,56 @@
+    // Map that defines key value pair of well-defined spacing range
+
+   $spaces: (none: 0,
+   3xs: 3px,
+   2xs: 5px,
+   1xs: 10px,
+   sm: 15px,
+   md: 20px,
+   lg: 25px,
+   1xl: 30px,
+   2xl: 35px,
+   4xl: 40px
+   );
+
+   // Padding mixin that takes direction of padding that needs to be applied
+   // And one spacing qualifier (in this case, anywhere between 3xs to 3xl).
+   // Do the same for margin mixin
+   /*
+
+    USAGE:
+    .content {
+      @include distance(y, 3xl);
+    }
+
+  */
+
+   @mixin padding($direction: all, $size: md) {
+      @if $direction == all {
+          @include spacer(padding, $size);
+      }
+      @else if $direction == left {
+          @include spacer(padding-left, $size);
+      }
+      @else if $direction == right {
+          @include spacer(padding-right, $size);
+      }
+      @else if $direction == top {
+          @include spacer(padding-top, $size);
+      }
+      @else if $direction == bottom {
+          @include spacer(padding-bottom, $size);
+      }
+      @else if $direction == x {
+          @include spacer(padding-left, $size);
+          @include spacer(padding-right, $size);
+      }
+      @else if $direction == y {
+          @include spacer(padding-top, $size);
+          @include spacer(padding-bottom, $size);
+      }
+   }
+
+   // Helper to prevent repeating code
+   @mixin spacer($attribute, $unit) {
+      #{$attribute}: map-get($spaces, $unit);
+   }

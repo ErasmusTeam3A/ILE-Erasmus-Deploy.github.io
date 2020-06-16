@@ -1,0 +1,88 @@
+.interactive {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    &__heading{
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+
+        h2{
+            font-size: map-get-deep($typo, 'h2', 'md');
+            span{
+                font-size: map-get-deep($typo, 'base', 'sm');
+                font-family: unquote(map-get-deep($typo, 'font', 'text'));
+                color: map-get-deep($colors, 'text','gray');
+            }
+        }
+    }
+    
+    &__side-menu {
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+    }
+    &__menu {
+        font-family: unquote(map-get-deep($typo, 'font', 'text'));
+        position: absolute;
+        padding-left: 20px;
+        padding-top: 20px;
+        top: 0;
+        left: 0;
+        background-color: map-get-deep($colors, 'backgrounds','light-black');
+        width: 300px;
+        height: 100%;
+        z-index: 10;
+        border-radius: 0px 20px 20px 0px;
+        box-sizing: border-box;
+    }
+
+&__menu-filter{
+    position: absolute;
+    bottom: 20%;
+    .button-side-left{
+        margin-bottom: 1rem;
+    }
+}
+
+    &__menu-heading{
+        display:block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+
+        h3{
+            color: map-get-deep($colors, 'text', 'white');
+            font-size: unquote(map-get-deep($typo, 'h2', 'md'));
+
+        }
+        li{
+            cursor: pointer;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80%;
+            height: 6px;
+            background-color: map-get-deep($colors, 'brand', 'tertiary');
+        }
+
+    }
+
+    &__filter-button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+}

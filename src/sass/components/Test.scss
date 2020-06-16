@@ -1,0 +1,9 @@
+body {
+    height: 100%;
+    background-color: map-get-deep($colors, 'brand', 'secondary');
+    font-family: unquote(map-get-deep($typo, 'font', 'head'));
+
+    @include breakpoint('lg') {
+
+     }
+}

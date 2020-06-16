@@ -1,0 +1,100 @@
+.select {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 25px 30px ;
+    box-sizing: border-box;
+    background: rgb(204,212,227);
+    background: linear-gradient(128deg, rgba(204,212,227,0.45) 0%, rgba(221,226,236,0.36) 50%, rgba(255,255,255,0) 100%);
+
+    &__content-wrapper {
+        display: inline-block;
+        margin: 0 auto;
+        // max-width: 1080px;
+        width: 100%;
+
+
+        .silhouette{
+            display: block;
+            width: 256px;
+            margin: 0 auto;
+            position: relative;
+            height: 610px ;
+
+
+        .silhouette-image{
+            height: 100%;
+            width: 100%;
+            background-size: contain;
+            &.hip{
+                background-image: url('../../images/human-hips.png');
+            }
+            &.body{
+                background-image: url('../../images/human.png');
+            }
+        }
+
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .start{
+            &__button-container{
+                height: auto;
+                width: 100%;
+
+            }
+            &__button-wrapper{
+                float: right;
+            }
+        }
+    }
+
+
+    &__head-wrapper{
+        display:flex;
+        width: 100%;
+        height: auto;
+        flex-wrap:wrap;
+        justify-content: space-between;
+
+        .title{
+            width: 70%;
+            float: left;
+            h1{
+                font-size: unquote(map-get-deep($typo, 'h2', 'sm'));
+                color: map-get-deep($swatches, 'black');
+                font-family: unquote(map-get-deep($typo, 'font', 'head'));
+                position: relative;
+                display:inline-block;
+                padding-bottom: 15px;
+                text-transform: uppercase;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 60%;
+                    height: 6px;
+                    background-color: map-get-deep($colors, 'brand', 'tertiary');
+                }
+            }
+        }
+
+        .text{
+            width: 70%;
+            float: left;
+            margin-top:15px;
+
+            p{
+            font-family: unquote(map-get-deep($typo, 'font', 'text'));
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+// MAP-GET-DEEP USAGE
+/*
+@Colors
+map-get-deep($colors, 'brand', 'secondary');
+
+@Font-family
+unquote(map-get-deep($typo, 'font', 'head'));
+
+@Font-size
+map-get-deep($typo, 'base', 'md')
+*/
+
+
+// Functions
+@import
+    './functions/map-get-deep';
+
+// Variables
+@import
+    './variables/colors',
+    './variables/typography',
+    './variables/breakpoints';
+
+// Mixins
+@import
+    './mixins/breakpoints',
+    './mixins/distance';
+
+// Base styles
+@import
+      './base/base.scss',
+      './base/custom-bootstrap.scss',
+      './base/start.scss',
+      './base/interactive.scss',
+      './base/recent.scss',
+      './base/select.scss',
+      './base/dicom.scss';
+
+// Components
+@import './components/Model.scss',
+ './components/test.scss',
+ './components/Modal.scss',
+ './components/test.scss',
+        './components/button.scss',
+        './components/back.scss',
+        './components/Collapsible.scss',
+        './components/card.scss',
+        './components/dicom-card.scss';
+        

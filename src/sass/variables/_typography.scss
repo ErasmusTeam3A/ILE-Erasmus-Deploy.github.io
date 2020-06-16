@@ -1,0 +1,80 @@
+/* ===============================================
+   Typography settings
+   =============================================== */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap'");
+
+$typo: (
+    // fonts
+    'font': (
+        'text': 'Open Sans, sans-serif',
+        'head': 'Raleway, sans-serif',
+    ),
+    'selection': (
+        'background': #b4d5fe,
+        'text-color': #000,
+    ),
+    // line height
+    'line-height': (
+        'h1-head':1,
+        'text': 1.8,
+        'head': 1.1,
+    ),
+    // weights
+    'weight': (
+        'light': 300,
+        'regular': 400,
+        'bold': 700,
+    ),
+    // default sizes
+    'base': (
+        'xs': 14px,
+        'sm': 14px,
+        'md': 16px,
+    ),
+    'xsmall': (
+        'xs': 10px,
+        'sm': 10px,
+        'md': 10px,
+    ),
+    'small': (
+        'xs': 14px,
+        'sm': 14px,
+        'md': 14px,
+    ),
+    'title': (
+        'xs': 32px,
+        'sm': 56px,
+        'md': 80px,
+    ),
+    'h1': (
+        'xs': 32px,
+        'sm': 40px,
+        'md': 56px,
+        'lg': 120px,
+    ),
+    'h2': (
+        'xs': 24px,
+        'sm': 24px,
+        'md': 34px,
+    ),
+    'h3': (
+        'xs': 21px,
+        'sm': 24px,
+        'md': 27px,
+    ),
+    'h4': (
+        'xs': 16px,
+        'sm': 20px,
+        'md': 21px,
+    ),
+    'h5': (
+        'xs': 14px,
+        'sm': 14px,
+        'md': 16px,
+    ),
+    'h6': (
+        'xs': 14px,
+        'sm': 14px,
+        'md': 14px,
+    ),
+);

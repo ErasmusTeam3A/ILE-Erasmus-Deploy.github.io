@@ -1,0 +1,115 @@
+a{
+    text-decoration: none;
+.card{
+    width: 100%;
+    height: 175px;
+    border-right: 6px solid map-get-deep($swatches, 'blue');
+    border-left: 6px solid map-get-deep($swatches, 'blue');
+    box-sizing: border-box;
+    font-family: unquote(map-get-deep($typo, 'font', 'head'));
+    background: rgb(204,212,227);
+    background: linear-gradient(90deg, rgba(204,212,227,0.45) 0%, rgba(221,226,236,0.36) 50%, rgba(255,255,255,0) 100%);
+    transition: all 0.2s linear;
+    transition-property: height;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+
+    .left{
+
+        width: calc(100% - 125px);
+        height: 100%;
+        box-sizing: border-box;
+        span{
+            color: map-get-deep($swatches   , 'gray');
+        }
+        .title{
+            font-weight: map-get-deep($typo, 'weight', 'bold');
+            font-size: map-get-deep($typo, 'h3', 'md');
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: map-get-deep($swatches, 'black');
+        }
+
+        .specials{
+            color: map-get-deep($swatches, 'black');
+        }
+
+        span{
+            width: 100%;
+            display: inline-block;
+            color: map-get-deep($swatches, 'gray');
+        }
+        strong{
+            display: inline-block;
+            margin-top:40px;
+            color: map-get-deep($swatches   , 'gray');
+        }
+    }
+    .right{
+        width: 125px;
+        box-sizing: border-box;
+        height: 100px;
+        margin-top: calc(175px - 100px);
+        font-weight: map-get-deep($typo, 'weight', 'bold');
+
+        span{
+            color: map-get-deep($swatches, 'blue');
+            display: inline-block;
+            width: auto;
+            margin-left: 10px;
+            font-weight: 700;
+        }
+
+        p{
+            color: map-get-deep($swatches, 'gray');
+        }
+
+        .type{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            font-family: unquote(map-get-deep($typo, 'font', 'head'));
+            
+
+            .left{
+                width: calc(100% - 50px);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: left;
+                p{
+                    display: inline-block;
+                    width: auto;
+                    margin-left: 5px;
+                    color: map-get-deep($swatches, 'gray');
+                } 
+                span{
+                    color: map-get-deep($swatches, 'blue');
+                    display: inline-block;
+                    width: auto;
+                }
+            }
+
+            .right{
+                width:40px;
+                height: 40px;
+                margin:0;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        
+    }
+    &:hover{
+    //    height: 190px;
+    }
+
+
+}
+}

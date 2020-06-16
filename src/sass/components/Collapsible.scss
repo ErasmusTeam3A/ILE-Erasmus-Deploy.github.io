@@ -1,0 +1,72 @@
+.collaps{
+    color: white;
+    font-family: unquote(map-get-deep($typo, 'font', 'text'));
+    
+    display: block;
+    
+    &__trigger{
+        font-size: unquote(map-get-deep($typo, 'h3', 'sm'));
+        position: relative;
+        cursor: pointer;
+        // border-left: 6px solid transparent;
+
+        &::after{
+            display: block;
+            content: url('data:image/svg+xml;charset=UTF-8,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="white" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>');
+            position: absolute;
+            top: 50%;
+            right: -30px;
+            background-size: 15px 18px;
+            height: 22px;
+            width: 15px;
+            transform: translate(0, -57%);
+            // height: 100%;
+            // width: auto;
+        }
+        &.is-open{
+            // border-left: 6px solid map-get-deep($colors, 'brand', 'tertiary');
+            // box-sizing: border-box;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -16px;
+                width: 6px;
+                height: 100%;
+                background-color: map-get-deep($colors, 'brand', 'tertiary');
+            }
+
+            &::after{
+                transform: translate(0, -57%) rotate(90deg);
+            }
+        }
+
+        &.is-closed{
+
+        }
+
+        &.is-disabled{
+
+        }
+    }
+
+    &__contentOuter{
+
+    }
+    &__contentInner{
+        padding: 10px 0px 10px 20px;
+        ul{
+            padding: 0;
+            margin: 0;
+            // list-style-type: none;
+            li{
+                padding: 0;
+                
+                font-size: unquote(map-get-deep($typo, 'h5', 'sm'));
+
+                
+            }
+        }
+    }
+}

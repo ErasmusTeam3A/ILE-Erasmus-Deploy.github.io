@@ -1,0 +1,11 @@
+@function map-get-deep($map, $keys...) {
+    @each $key in $keys {
+        @if map-has-key($map, $key) == false {
+            @error "Key `#{$key}` does not exist in `#{$keys}`.";
+        }
+
+        $map: map-get($map, $key);
+    }
+
+    @return $map;
+}

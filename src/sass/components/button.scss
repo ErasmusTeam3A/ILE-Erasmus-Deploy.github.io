@@ -1,0 +1,28 @@
+.button {
+    background-color: map-get-deep($colors, 'brand', 'tertiary');
+    border-radius: 23px;
+    border-style: none;
+    color: map-get-deep($colors, 'brand', 'secondary');
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 16px;
+    width: 200px;
+    height: 48px;
+    cursor: pointer;
+    &:disabled{
+        background-color: map-get-deep($colors, 'text', 'gray');
+        cursor: not-allowed;
+    }
+    &-side-left{
+        border-radius: 0 23px 23px 0;
+        transform: translate(-20px, 0);
+    }
+    &-side-right{
+        border-radius: 23px 0 0 23px;
+        // transform: translate(-20px, 0);
+    }
+    &.hidden{
+        visibility: hidden;
+        display: none;
+    }
+}

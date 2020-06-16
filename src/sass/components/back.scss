@@ -1,0 +1,16 @@
+.back{
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    height: 50px;
+    width: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+    img{
+        height: 50px;
+        object-fit: contain;
+        width: auto;
+    }
+}

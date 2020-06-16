@@ -1,0 +1,43 @@
+/*
+   Mixin: breakpoint
+
+   Usage: breakpoint('sm');
+   Usage: breakpoint('sm', 'md'); min-width/max-width
+   Usage: breakpoint(400px, 1000px); // custom breakpoints
+
+   Example:
+   @include breakpoint('lg') {
+        width: 60px;
+        height: 60px;
+    }
+*/
+
+@mixin breakpoint($min, $max: false) {
+    $min-query: if(type-of($min) == 'string', map-get-deep($breakpoints, $min), $min);
+    $max-query: if(type-of($max) == 'string', map-get-deep($breakpoints, $max), $max);
+
+    @if $min-query and not $max-query {
+        $query: inspect($min-query);
+
+        @media (min-width: $query) {
+            @content;
+        }
+    }
+
+    @else if $min-query and $max-query {
+        $min-query: inspect($min-query);
+        $max-query: inspect($max-query);
+
+        @media (min-width: $min-query) and (max-width: $max-query) {
+            @content;
+        }
+    }
+
+    @else if not $min-query and $max-query {
+        $query: inspect($max-query);
+
+        @media (max-width: $query) {
+            @content;
+        }
+    }
+}

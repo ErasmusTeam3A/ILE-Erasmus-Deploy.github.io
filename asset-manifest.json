@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ILE-Erasmus-Deploy/static/css/main.2ba0ca69.chunk.css",
+    "main.js": "/ILE-Erasmus-Deploy/static/js/main.1e0327dc.chunk.js",
+    "main.js.map": "/ILE-Erasmus-Deploy/static/js/main.1e0327dc.chunk.js.map",
+    "runtime-main.js": "/ILE-Erasmus-Deploy/static/js/runtime-main.dd8bcb2d.js",
+    "runtime-main.js.map": "/ILE-Erasmus-Deploy/static/js/runtime-main.dd8bcb2d.js.map",
+    "static/js/2.eae45f6a.chunk.js": "/ILE-Erasmus-Deploy/static/js/2.eae45f6a.chunk.js",
+    "static/js/2.eae45f6a.chunk.js.map": "/ILE-Erasmus-Deploy/static/js/2.eae45f6a.chunk.js.map",
+    "index.html": "/ILE-Erasmus-Deploy/index.html",
+    "precache-manifest.3c22d1a09f1a0e28a115687c26478e31.js": "/ILE-Erasmus-Deploy/precache-manifest.3c22d1a09f1a0e28a115687c26478e31.js",
+    "service-worker.js": "/ILE-Erasmus-Deploy/service-worker.js",
+    "static/css/main.2ba0ca69.chunk.css.map": "/ILE-Erasmus-Deploy/static/css/main.2ba0ca69.chunk.css.map",
+    "static/js/2.eae45f6a.chunk.js.LICENSE.txt": "/ILE-Erasmus-Deploy/static/js/2.eae45f6a.chunk.js.LICENSE.txt",
+    "static/media/dicom-pelvic.jpg": "/ILE-Erasmus-Deploy/static/media/dicom-pelvic.fd136912.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd8bcb2d.js",
+    "static/js/2.eae45f6a.chunk.js",
+    "static/css/main.2ba0ca69.chunk.css",
+    "static/js/main.1e0327dc.chunk.js"
+  ]
+}

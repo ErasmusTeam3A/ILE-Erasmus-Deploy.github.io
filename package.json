@@ -23,7 +23,7 @@
     "react-three-fiber": "^4.0.27",
     "regenerator-runtime": "^0.13.5",
     "style-loader": "^1.2.1",
-    "three": "^0.115.0",
+    "three": "^0.137.0",
     "three-obj-loader": "^1.1.3",
     "three-react-obj-loader": "^1.0.4",
     "three-stl-loader": "^1.0.6"
